@@ -1,0 +1,31 @@
+{
+  "name": "@chris-zhu/eslint-config-monorepo",
+  "version": "1.0.1",
+  "private": true,
+  "packageManager": "pnpm@7.0.1",
+  "license": "MIT",
+  "author": "chris-zhu",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm -r build",
+    "stub": "pnpm -r stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "release": "zx scripts/release.mjs",
+    "removeTag": "zx scripts/removeTag.mjs"
+  },
+  "devDependencies": {
+    "@chris-zhu/eslint-config": "workspace:*",
+    "@chris-zhu/eslint-plugin": "workspace:*",
+    "@types/react": "^18.0.9",
+    "bumpp": "^7.1.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^8.14.0",
+    "fs-extra": "^10.1.0",
+    "jiti": "^1.13.0",
+    "react": "^18.1.0",
+    "typescript": "^4.6.4",
+    "zx": "^6.1.0"
+  }
+}

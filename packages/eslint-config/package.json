@@ -1,0 +1,29 @@
+{
+  "name": "@chris-zhu/eslint-config",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "chris-zhu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-zhu/eslint-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@chris-zhu/eslint-plugin": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}

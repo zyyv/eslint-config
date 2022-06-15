@@ -1,0 +1,7 @@
+{
+  "extends": "@chris-zhu",
+  "ignorePatterns": [
+    "scripts/release.mjs",
+    "scripts/removeTag.mjs",
+  ]
+}
