@@ -29,11 +29,6 @@ jobs:
       - name: PNPM build
         run: pnpm build
 
-      - run: npx changelogithub
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
-
       - name: Publish to NPM
         run: pnpm -r publish --access public --no-git-checks
         env:
