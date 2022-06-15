@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: [
     'plugin:@chris-zhu/typescript',
     'plugin:@chris-zhu/react',

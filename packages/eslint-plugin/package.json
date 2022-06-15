@@ -2,9 +2,9 @@
   "name": "@chris-zhu/eslint-plugin",
   "version": "1.0.1",
   "description": "My eslint plugin",
-  "keywords": [],
+  "keywords": ["eslint-plugin"],
   "license": "MIT",
-  "author": "chris-zhu",
+  "author": "chris-zhu <https://github.com/chris-zhu>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chris-zhu/eslint-config.git",
@@ -12,11 +12,8 @@
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "files": [
-    "index.js"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "prepublishOnly": "pnpm run build",
     "stub": "unbuild --stub",
     "build": "unbuild"
   },
@@ -50,9 +47,6 @@
   },
   "devDependencies": {
     "@babel/types": "^7.17.10",
-    "@typescript-eslint/utils": "^5.21.0",
-    "eslint": "^8.14.0",
-    "typescript": "^4.6.4",
-    "unbuild": "^0.7.4"
+    "@typescript-eslint/utils": "^5.21.0"
   }
 }
