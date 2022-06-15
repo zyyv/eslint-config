@@ -1,16 +1,12 @@
-name: CI
+name: Release
 
 on:
   push:
-    branches:
-      - main
-
-  pull_request:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
-  lint:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,7 +18,7 @@ jobs:
         with:
           version: 7.1.0
 
-      - name: Set Node
+      - name: Set node
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
@@ -30,8 +26,15 @@ jobs:
       - name: Install Deps
         run: pnpm install
 
-      - name: Build
+      - name: PNPM build
         run: pnpm build
 
-      - name: Lint
-        run: pnpm lint
+      - run: npx changelogithub
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
