@@ -1,8 +1,10 @@
 {
   "name": "@chris-zhu/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My ESLint config",
-  "keywords": ["eslint-config"],
+  "keywords": [
+    "eslint-config"
+  ],
   "license": "MIT",
   "author": "chris-zhu <https://github.com/chris-zhu>",
   "repository": {
@@ -12,7 +14,9 @@
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "stub": "unbuild --stub",
