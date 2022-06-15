@@ -13,16 +13,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
-        with:
-          version: 7.1.0
-
       - name: Set node
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.1
+        with:
+          version: 7.1.0
+      
       - name: Install Deps
         run: pnpm install
 
