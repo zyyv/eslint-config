@@ -13,23 +13,24 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
       - name: Set node
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+          cache: pnpm
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7.1.0
-
-      - name: Install Deps
+      - name: Install
         run: pnpm install
 
-      - name: PNPM build
-        run: pnpm build
+      - name: Build
+        run: pnpm run build
 
       - name: Publish to NPM
-        run: pnpm -r publish --access public --no-git-checks
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${{secrets.NPM_TOKEN}}
+          pnpm -r publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
