@@ -1,7 +1,7 @@
 {
   "name": "@chris-zhu/eslint-config-monorepo",
-  "version": "1.0.5",
   "private": true,
+  "version": "1.0.5",
   "packageManager": "pnpm@7.1.0",
   "license": "MIT",
   "author": "Chris <https://github.com/zyyv>",
