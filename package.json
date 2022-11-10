@@ -10,7 +10,7 @@
     "dev": "nr stub",
     "stub": "pnpm -r --parallel run stub",
     "lint": "eslint .",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag"
+    "release": "bumpp package.json packages/*/package.json"
   },
   "devDependencies": {
     "@chris-zhu/eslint-config": "workspace:*",
