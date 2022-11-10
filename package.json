@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@7.1.0",
   "license": "MIT",
-  "author": "chris-zhu <https://github.com/chris-zhu>",
+  "author": "Chris <https://github.com/zyyv>",
   "scripts": {
     "build": "pnpm -r build",
     "dev": "nr stub",
@@ -15,11 +15,11 @@
   "devDependencies": {
     "@chris-zhu/eslint-config": "workspace:*",
     "@chris-zhu/eslint-plugin": "workspace:*",
-    "@types/react": "^18.0.9",
-    "bumpp": "^7.1.1",
-    "eslint": "^8.14.0",
+    "@types/react": "^18.0.25",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.27.0",
     "react": "^18.1.0",
-    "typescript": "^4.6.4",
-    "unbuild": "^0.7.4"
+    "typescript": "^4.8.4",
+    "unbuild": "^0.9.4"
   }
 }

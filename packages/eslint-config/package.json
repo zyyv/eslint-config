@@ -6,10 +6,10 @@
     "eslint-config"
   ],
   "license": "MIT",
-  "author": "chris-zhu <https://github.com/chris-zhu>",
+  "author": "Chris <https://github.com/zyyv>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chris-zhu/eslint-config.git",
+    "url": "git+https://github.com/zyyv/eslint-config.git",
     "directory": "packages/eslint-config"
   },
   "main": "dist/index.cjs",

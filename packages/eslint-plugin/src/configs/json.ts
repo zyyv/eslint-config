@@ -19,17 +19,18 @@ export default defineConfig({
       files: ['package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
+        'indent': ['error', 2, { SwitchCase: 1 }],
         'jsonc/sort-keys': [
           'error',
           {
             pathPattern: '^$',
             order: [
               'name',
+              'description',
+              'private',
               'type',
               'version',
-              'private',
               'packageManager',
-              'description',
               'keywords',
               'license',
               'author',
