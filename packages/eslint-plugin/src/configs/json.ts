@@ -13,13 +13,14 @@ export default defineConfig({
         'strict': 'off',
         'no-unused-expressions': 'off',
         'no-irregular-whitespace': 'off',
+        'jsonc/indent': ['error', 2],
       },
     },
     {
       files: ['package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
-        'indent': ['error', 2, { SwitchCase: 1 }],
+        'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
         'jsonc/sort-keys': [
           'error',
           {
