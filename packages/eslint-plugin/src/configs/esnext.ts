@@ -14,7 +14,7 @@ export default defineConfig({
     sourceType: 'module',
   },
   extends: [
-    'plugin:@chris-zhu/core',
+    'plugin:@zyyv/core',
     'plugin:import/recommended',
     'plugin:promise/recommended',
   ],

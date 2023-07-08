@@ -28,9 +28,9 @@ export default defineConfig({
             order: [
               'name',
               'description',
+              'version',
               'private',
               'type',
-              'version',
               'packageManager',
               'keywords',
               'license',

@@ -1,5 +1,5 @@
 {
-  "name": "@chris-zhu/eslint-config",
+  "name": "@zyyv/eslint-config",
   "description": "My ESLint config",
   "version": "1.0.7",
   "keywords": [
@@ -29,6 +29,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@chris-zhu/eslint-plugin": "workspace:*"
+    "@zyyv/eslint-plugin": "workspace:*"
   }
 }

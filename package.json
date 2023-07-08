@@ -1,8 +1,8 @@
 {
-  "name": "@chris-zhu/eslint-config-monorepo",
+  "name": "@zyyv/eslint-config-monorepo",
+  "version": "0.0.0",
   "private": true,
-  "version": "1.0.7",
-  "packageManager": "pnpm@7.1.0",
+  "packageManager": "pnpm@8.6.6",
   "license": "MIT",
   "author": "Chris <https://github.com/zyyv>",
   "scripts": {
@@ -13,13 +13,13 @@
     "release": "bumpp package.json packages/*/package.json"
   },
   "devDependencies": {
-    "@chris-zhu/eslint-config": "workspace:*",
-    "@chris-zhu/eslint-plugin": "workspace:*",
-    "@types/react": "^18.0.25",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.27.0",
+    "@types/react": "^18.2.14",
+    "@zyyv/eslint-config": "workspace:*",
+    "@zyyv/eslint-plugin": "workspace:*",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.44.0",
     "react": "^18.1.0",
-    "typescript": "^4.8.4",
-    "unbuild": "^0.9.4"
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
   }
 }

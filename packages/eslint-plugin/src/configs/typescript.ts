@@ -1,10 +1,9 @@
-
 import { defineConfig, fromEntries, ruleFromStandard } from '../utils'
 import { TSEquivalents, resolverExtensionsWithTS } from '../constants'
 
 export default defineConfig({
   extends: [
-    'plugin:@chris-zhu/esnext',
+    'plugin:@zyyv/esnext',
     'plugin:import/typescript',
   ],
   settings: {

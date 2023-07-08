@@ -34,4 +34,4 @@ pnpm lint:fix
 
 ## License
 
-MIT License © 2022 [chris-zhu](https://github.com/zyyv)
+MIT License © 2022 [zyyv](https://github.com/zyyv)
